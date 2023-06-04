@@ -2,4 +2,12 @@
   <ion-button expand="block" (click)="takePhoto()">Tomar foto</ion-button>
 
   <ion-img *ngIf="capturedImage" [src]="capturedImage"></ion-img>
+
+
+  <ion-button expand="block" (click)="getCurrentLocation()">Obtener ubicación</ion-button>
+
+  <ion-label *ngIf="latitude && longitude">
+    Latitud: {{ latitude }}<br>
+    Longitud: {{ longitude }}
+  </ion-label>
 </ion-content>
