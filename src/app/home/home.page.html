@@ -1,0 +1,5 @@
+<ion-content>
+  <ion-button expand="block" (click)="takePhoto()">Tomar foto</ion-button>
+
+  <ion-img *ngIf="capturedImage" [src]="capturedImage"></ion-img>
+</ion-content>
